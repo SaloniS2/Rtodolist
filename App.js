@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-
+import './mystyles.css'
 class App extends Component {
   constructor(props){
     super(props);
@@ -16,14 +16,6 @@ updateInput(key,value){
     [key]:value
   });
 }
-
-
-
-
-
-
-
-
 
 //Creating addItem function
 addItem(){
@@ -61,27 +53,27 @@ deleteItem(id){
   render(){
     return (
     <div className="App">
-      <div>
-      Add an Item...
+      <div className="main-block">
+      <h1>TO-DO LIST</h1>
       <br/>
-      <input
+      <input id="textbox"
       type="text"
       placeholder="Type input here..."
       value={this.state.newItem}//takes new items from user
       //e is the event,uodateInput is a function
       onChange={e=>this.updateInput("newItem",e.target.value)}
       />
-      <button
+      <button className="btn" id="btn-add"
       onClick={()=>this.addItem()}
-      >Add
+      >Add 
       </button>
       <br/>
-      <ul>
+      <ul className="unorderedlist">
       {this.state.list.map(item =>{
         return(
           <li key={item.id}>
           {item.value}
-          <button
+          <button id="btn-del"
           onClick={()=>this.deleteItem(item.id)}
           >
           X
