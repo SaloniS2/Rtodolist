@@ -1,0 +1,74 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box; 
+ }
+ h1{
+   font-style:italic;
+   font-size:3.5rem;
+color:rgb(239, 239, 245);
+ }
+ .App{
+   background-image:linear-gradient(to right bottom ,red,blue);
+   margin:10rem;
+  margin-left:20rem !important;
+  margin-top:1rem !important;
+   padding:3rem;
+   border:black solid 5px;
+   height:40rem;
+   width:50rem;
+   text-align:left;
+   position:relative;
+   }
+   .main-block{
+    height:35rem;
+    width:45rem;
+   }
+#textbox{
+  height:2rem;
+  width:37rem;
+  margin:0.2rem;
+  padding:0.5rem;
+  color:black;
+  font-size:1rem;
+}
+.btn{
+height:2rem;
+width:5rem;
+text-align:center;
+color:black;
+font-size:1rem;
+margin:0.3rem;
+padding:0.5rem;
+display:inline-block;
+border-radius: 10rem;
+}
+#btn-add{
+background-color: rgb(75, 240, 75);
+}
+#btn-del{
+  background-color:black;
+  color:white;
+ font-size:1rem;
+ display:inline-block;
+ margin:.5rem;
+ height:1.5rem;
+ width:2rem;
+}
+.unorderedlist{
+  position:absolute;
+  list-style: none;
+  color:whitesmoke;
+  text-transform:uppercase;
+  font-size:1.5rem;
+  text-align:left;
+    padding:1rem;
+    margin:.3rem; 
+    margin-right:1rem !important;
+    
+    /* .cards__details ul li {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      padding: 1rem; } */
+}
